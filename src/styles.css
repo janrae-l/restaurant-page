@@ -1,0 +1,106 @@
+body {
+    display: grid;
+    width: 80%;
+    grid-template-rows: repeat(1fr, 2fr);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+header {
+    margin: 0 auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(
+        50px, 150px
+    ));
+    gap: 10px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+button {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    color: red;
+    border-color: red;
+}
+
+#content {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-title-container {
+    padding-top: 30px;
+}
+
+.menu-title-one {
+    color: green;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.menu-title-sec {
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.menu-tagline {
+    color: green;
+    font-size: 1rem;
+
+}
+
+.dishFirstLine {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.dishTitle {
+    color: green;
+}
+
+.price {
+    color: red;
+}
+
+.dishTitle, .price {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.dishDetail {
+    font-size: 0.9rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    white-space: pre-line;
+}
+
+.contact-details::first-line {
+    color: green;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
